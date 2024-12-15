@@ -4,7 +4,7 @@
   "description": "https://www.youtube.com/watch?v=9BD9eK9VqXA&ab_channel=Smoljames",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
