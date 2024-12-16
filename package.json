@@ -1,15 +1,18 @@
 {
   "name": "pr",
   "version": "1.0.3",
-  "description": "https://www.youtube.com/watch?v=9BD9eK9VqXA&ab_channel=Smoljames",
+  "description": "https://www.youtube.com/watch?v=9BD9eK9VqXA&ab_channel=Smoljames 2:32",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "dev": "node --watch --env-file=.env ./src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.2"
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
   }
 }
