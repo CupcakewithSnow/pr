@@ -1,6 +1,6 @@
 // Configuration
 import express from "express";
-
+import authRoutes from "./routes/authRoute.js";
 // Constants
 const PORT = process.env.PORT || 3012;
 
@@ -31,6 +31,8 @@ app.get("/", (req, res) => {
     next(error);
   }
 });
+
+app.use("/auth", authRoutes);
 
 // Start server
 const startServer = () => {

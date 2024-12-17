@@ -1,11 +1,11 @@
 {
   "name": "pr",
   "version": "1.0.3",
-  "description": "https://www.youtube.com/watch?v=9BD9eK9VqXA&ab_channel=Smoljames 2:32",
+  "description": "https://www.youtube.com/watch?v=9BD9eK9VqXA&ab_channel=Smoljames 3:16",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node --watch --env-file=.env ./src/server.js"
+    "dev": "node  --watch --experimental-sqlite --env-file=.env ./src/server.js"
   },
   "keywords": [],
   "author": "",
