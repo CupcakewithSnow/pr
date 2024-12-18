@@ -1,4 +1,13 @@
-POST http://localhost:3012/auth/register
+#Login
+POST http://localhost:3012/auth/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"Danil",
+    "password":"2212342"
+}
+
+POST http://localhost:3012/auth/register HTTP/1.1
 Content-Type: application/json
 
 {

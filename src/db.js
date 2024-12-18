@@ -10,7 +10,7 @@ db.exec(`
     `);
 db.exec(`
     CREATE TABLE IF NOT EXISTS todos (
-     id INTEGER PRIMARY KEY,
+     id INTEGER PRIMARY KEY AUTOINCREMENT,
      user_id INTEGER,
      title TEXT NOT NULL,
      description TEXT,

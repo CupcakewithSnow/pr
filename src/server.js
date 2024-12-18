@@ -1,6 +1,8 @@
 // Configuration
 import express from "express";
 import authRoutes from "./routes/authRoute.js";
+import todoRoutes from "./routes/todoRoute.js";
+import authMiddleware from "./middleware/authMiddleware.js";
 // Constants
 const PORT = process.env.PORT || 3012;
 
@@ -33,6 +35,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/auth", authRoutes);
+app.use("/todos", authMiddleware, todoRoutes);
 
 // Start server
 const startServer = () => {
